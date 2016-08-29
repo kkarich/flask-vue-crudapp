@@ -12,7 +12,7 @@ db = SQLAlchemy(app)
 # set default route. this will be used to serve the vue.js application
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return app.send_static_file('index.html')
 
 # import the person module. This adds routes for JSON API
 import person

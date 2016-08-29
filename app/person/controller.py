@@ -12,7 +12,7 @@ def parse_date(value):
         date_of_birth = datetime.strptime(value, '%m/%d/%Y').date()
         return date_of_birth
     else:
-        raise ValueError("Date of Birth ccnnot be blank!")
+        raise ValueError("Date of Birth cannot be blank!")
 
 # init a new person parser and update person parser
 new_person_parser = reqparse.RequestParser(bundle_errors=True)
